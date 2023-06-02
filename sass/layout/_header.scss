@@ -1,0 +1,22 @@
+header {
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: all 0.5s;
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    .logo {
+      a {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+  &.scrollUp {
+    transform: translateY(-15rem);
+  }
+}

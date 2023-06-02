@@ -1,0 +1,26 @@
+.testimonial-carousel {
+  .slick-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 30%;
+    border: none;
+    &.slick-next {
+      right: 0;
+    }
+    i {
+      padding: 1rem;
+      color: $color-white;
+      background: $color-primary-dark;
+      font-size: 2rem;
+    }
+  }
+  .attrib {
+    font-size: 1.3rem;
+  }
+  .quote {
+    text-align: center;
+  }
+}
