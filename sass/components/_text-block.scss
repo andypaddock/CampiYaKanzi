@@ -1,0 +1,75 @@
+.section-text-block {
+  .text {
+    .button {
+      max-width: 30rem;
+    }
+    .text-block {
+      padding: 0 5rem;
+      &.align-left {
+        text-align: left;
+      }
+      &.align-cent {
+        text-align: center;
+      }
+      &.align-right {
+        text-align: right;
+      }
+      a {
+        color: $color-primary;
+        text-transform: uppercase;
+        padding-top: 3rem;
+        display: block;
+        font-family: $font-header;
+        &:hover {
+          color: $color-primary-light;
+        }
+      }
+      h2 {
+        padding-bottom: 3rem;
+      }
+    }
+    &__one {
+    }
+    &__two {
+      columns: 2;
+      column-gap: 2rem;
+    }
+    &__quote {
+      display: flex;
+      flex-wrap: wrap;
+      > div {
+        flex: 1 1 30rem;
+      }
+      .quote {
+        padding: 0 4rem;
+        font-size: 2.6rem;
+
+        color: $color-primary;
+      }
+    }
+    &__image {
+      img {
+        width: 40rem;
+      }
+      .left {
+        float: left;
+        padding: 0 4rem 1rem 0;
+      }
+      .right {
+        float: right;
+        padding: 0 4rem 1rem 4rem;
+      }
+    }
+  }
+}
+.title-block {
+  padding: 5rem 0 0;
+  &--heading {
+    &.align-center {
+      text-align: center;
+    }
+    &.align-right {
+      text-align: right;
+    }
+  }
+}

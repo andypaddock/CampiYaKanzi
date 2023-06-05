@@ -7,7 +7,6 @@
 .heading-1 {
   @extend %heading;
   font-size: 4rem;
-  text-transform: uppercase;
   &--light {
     color: $color-grey-light-1;
   }
@@ -68,7 +67,7 @@ p {
   }
 }
 
-.text-cent {
+.align-cent {
   text-align: center;
 }
 .text-right {

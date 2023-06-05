@@ -22,7 +22,7 @@ if( $featured_posts ): ?>
         setup_postdata($post); ?>
                 <div class="triple-cards--card">
                     <a class="top-link" href="<?php the_permalink(); ?>"><i
-                            class="fa-sharp fa-light fa-square-chevron-right"></i></a>
+                            class="fa-thin fa-angle-right"></i></a>
                     <?php if (has_post_thumbnail()) : ?>
                     <img src="<?php echo get_the_post_thumbnail_url($post, 'hero-image'); ?>"
                         alt="<?php the_title(); ?>">
@@ -41,8 +41,8 @@ if( $featured_posts ): ?>
 
 
             <?php elseif ($cardType === 'fullwidth') : ?>
-            <div class="card__fullwidth">
-
+            <div class="card__fullwidth container">
+<div class="row fullwidth-text--wrapper">
                 <?php
 $featured_post = get_sub_field('large_page_link');
 if ($featured_post):
@@ -51,9 +51,9 @@ if ($featured_post):
                     <h2 class="heading-2 heading-2--light"><?php echo esc_html($featured_post->post_title); ?></h2>
                     <?php the_sub_field('large_link_description'); ?>
                     <a class="bottom-link" href="<?php the_permalink($featured_post->ID); ?>"><i
-                            class="fa-sharp fa-light fa-square-chevron-right"></i></a>
+                            class="fa-thin fa-angle-right"></i></a>
                 </div>
-
+</div>
                 <?php
     $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($featured_post->ID), 'hero-image');
     if ($thumbnail) :

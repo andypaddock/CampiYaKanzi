@@ -5,8 +5,22 @@ section.section-map {
   position: relative;
 }
 #map {
-  height: 75vh;
+  height: 80vh;
   margin-bottom: 5rem;
+  &::after {
+    content: "";
+    background: rgb(239, 236, 233);
+    background: linear-gradient(
+      0deg,
+      rgba(239, 236, 233, 1) 10%,
+      rgba(239, 236, 233, 0.5) 50%,
+      rgba(239, 236, 233, 0) 100%
+    );
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    bottom: 0;
+  }
   .marker {
     color: #ff9452;
     width: 2rem;
@@ -19,18 +33,20 @@ section.section-map {
     &.active {
       background: #ff9452;
       color: #ffffff;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 }
 .point-controls {
   position: absolute;
   bottom: 10rem;
-  width: 100%;
+  width: 120rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
   .next,
   .prev {
     i {
@@ -43,6 +59,9 @@ section.section-map {
   }
   .prev {
     left: 3rem;
+  }
+  .heading-1 {
+    text-transform: initial;
   }
 }
 #map-settings {

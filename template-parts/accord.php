@@ -7,7 +7,7 @@
         <div class="item tile">
 
             <label>
-                <span class="heading"><?php the_sub_field('title'); ?></span>
+                <h2 class="heading-4"><?php the_sub_field('title'); ?></h2>
                 <i class="fal fa-chevron-right fa-2x"></i>
             </label>
             <div class="content mb2">
