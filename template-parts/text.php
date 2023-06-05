@@ -23,9 +23,8 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                             ?>
-                        <a class="button" href="<?php echo esc_url($link_url); ?>"
-                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?><i
-                                class="fa-sharp fa-light fa-arrow-right"></i></a>
+                        <a  href="<?php echo esc_url($link_url); ?>"
+                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                         <?php endif; ?>
 
                     </div>
@@ -49,9 +48,8 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                             ?>
-                        <a class="button light children" href="<?php echo esc_url($link_url); ?>"
-                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?><i
-                                class="fa-sharp fa-light fa-arrow-right"></i></a>
+                        <a class="" href="<?php echo esc_url($link_url); ?>"
+                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -74,9 +72,8 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                             ?>
-                        <a class="button" href="<?php echo esc_url($link_url); ?>"
-                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?><i
-                                class="fa-sharp fa-light fa-arrow-right"></i></a>
+                        <a class="" href="<?php echo esc_url($link_url); ?>"
+                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -102,9 +99,8 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                             ?>
-                        <a class="button" href="<?php echo esc_url($link_url); ?>"
-                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?><i
-                                class="fa-sharp fa-light fa-arrow-right"></i></a>
+                        <a class="" href="<?php echo esc_url($link_url); ?>"
+                            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                         <?php endif; ?>
                     </div>
                 </div>

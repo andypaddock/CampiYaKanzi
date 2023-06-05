@@ -261,6 +261,16 @@ $(".toggle-block label").click(function () {
   });
 
 
+  $(".timeline-event__details .label").click(function () {
+    var otherLabels = $(this).parent().siblings(".timeline-event__details").find("label");
+    otherLabels.removeClass("collapsed");
+    otherLabels.next().slideUp();
+    $(this).toggleClass("collapsed");
+    $(this).next().slideToggle();
+  });
+
+
+
  $(document).ready(function () {
     "use strict";
 

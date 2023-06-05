@@ -13,9 +13,26 @@
         </div>
         <div class="point-controls">
             <div class="prev" id="prev-button"><i class="fa-sharp fa-light fa-square-chevron-left"></i></div>
+            <div class="controls-header"> <h2 class="heading-1 font-italic tileup">
+                <?php the_sub_field('hero_heading'); ?>
+            </h2></div>
             <div class="next" id="next-button"><i class="fa-sharp fa-light fa-square-chevron-right"></i></div>
-            
         </div>
+        <!-- <div class="fade-text">
+            <h3 class="heading-2 font-italic tileup">
+                <?php the_sub_field('fade_heading'); ?>
+            </h3>
+            <?php the_sub_field('fade_text'); ?>
+            <?php 
+$link = get_sub_field('fade_link');
+if( $link ): 
+    $link_url = $link['url'];
+    $link_title = $link['title'];
+    $link_target = $link['target'] ? $link['target'] : '_self';
+    ?>
+    <a class="" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+<?php endif; ?>
+        </div> -->
 
         <script>
         mapboxgl.accessToken =
@@ -23,17 +40,17 @@
 
         var points = [{
                 name: 'Point 1',
-                coordinates: [37.5330, 2.4642],
+                coordinates: [37.8891, -2.77589],
                 info: 'Basic information about Point 1.',
-                pitch: 85,
-                bearing: 180,
+                pitch: 60,
+                bearing: 28,
                 image: '/wp-content/uploads/2023/05/placeholder-1024x683-1.png',
                 link: ''
 
             },
             {
                 name: 'Point 2',
-                coordinates: [37.5328, 2.5447],
+                coordinates: [37.867392, -2.709631],
                 info: 'Basic information about Point 2.',
                 pitch: 65,
                 bearing: 150,
@@ -42,7 +59,7 @@
             },
             {
                 name: 'Point 3',
-                coordinates: [37.52606, 2.45078],
+                coordinates: [37.878674, -2.752509],
                 info: 'Basic information about Point 3.',
                 pitch: 75,
                 bearing: 120,
@@ -54,9 +71,9 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/silverless/clh0piium00lg01qy3g76gcf7', // style URL
-            center: [37.50606, 2.55078], // starting position [lng, lat]
+            center: [37.8891, -2.77589], // starting position [lng, lat]
             pitch: 65,
-            bearing: -180,
+            bearing: 60,
             zoom: 12, // starting zoom
         });
 
