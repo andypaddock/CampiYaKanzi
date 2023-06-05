@@ -23,8 +23,8 @@ section.section-map {
   }
   .marker {
     color: #ff9452;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background: #2e2d2b;
     display: grid;
@@ -33,8 +33,9 @@ section.section-map {
     &.active {
       background: #ff9452;
       color: #ffffff;
-      width: 3.5rem;
-      height: 3.5rem;
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -50,8 +51,10 @@ section.section-map {
   .next,
   .prev {
     i {
-      font-size: 4rem;
+      font-size: 3rem;
       cursor: pointer;
+      border: 1px solid $color-black;
+      padding: 0.5rem 1rem;
     }
   }
   .next {
@@ -77,13 +80,13 @@ section.section-map {
   right: 0;
   background-color: $color-grey-dark-1;
   color: $color-white;
-  margin: 2rem;
+  margin: 5rem;
   img {
     width: 30rem;
   }
   h3 {
     text-align: center;
-    padding: 0 1rem;
+    padding: 1rem 1rem 0;
     text-transform: uppercase;
     font-family: $font-header;
     font-weight: 400;
@@ -97,6 +100,7 @@ section.section-map {
     display: block;
     text-align: center;
     text-transform: uppercase;
+    font-family: $font-header;
     padding: 0 2rem 2rem;
   }
 }

@@ -12,11 +12,11 @@
             <p id="map-bearing"></p>
         </div>
         <div class="point-controls">
-            <div class="prev" id="prev-button"><i class="fa-sharp fa-light fa-square-chevron-left"></i></div>
+            <div class="prev" id="prev-button"><i class='fa-thin fa-angle-left' aria-hidden='true'></i></div>
             <div class="controls-header"> <h2 class="heading-1 font-italic tileup">
                 <?php the_sub_field('hero_heading'); ?>
             </h2></div>
-            <div class="next" id="next-button"><i class="fa-sharp fa-light fa-square-chevron-right"></i></div>
+            <div class="next" id="next-button"><i class='fa-thin fa-angle-right' aria-hidden='true'></i></div>
         </div>
         <!-- <div class="fade-text">
             <h3 class="heading-2 font-italic tileup">
