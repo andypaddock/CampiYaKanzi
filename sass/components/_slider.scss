@@ -56,7 +56,7 @@
   .awards-wrapper {
     list-style: none;
     display: grid;
-    grid-gap: 5rem;
+    grid-gap: 1rem;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     .slick-arrow {
@@ -73,6 +73,9 @@
       height: 100%;
       padding: 3rem;
       object-fit: contain;
+    }
+    @media only screen and (min-width: $bp-large) {
+      grid-gap: 15rem;
     }
   }
 }

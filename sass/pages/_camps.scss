@@ -1,0 +1,38 @@
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+#camp-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  @include backgroundCover;
+  z-index: -1;
+}
+.camp-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+}
+.camp-nav {
+  display: flex;
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      padding: 1rem 3rem;
+    }
+  }
+}

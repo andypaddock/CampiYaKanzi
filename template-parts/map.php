@@ -6,17 +6,21 @@
             <h3>Point 1</h3>
             <p>Basic information about Point 1.</p>
         </div>
-        <div id="map-settings">
+        <!-- <div id="map-settings">
             <p id="map-pitch"></p>
             <p id="map-zoom"></p>
             <p id="map-bearing"></p>
-        </div>
+        </div> -->
         <div class="point-controls">
-            <div class="prev" id="prev-button"><i class='fa-thin fa-angle-left' aria-hidden='true'></i></div>
-            <div class="controls-header"> <h2 class="heading-1 font-italic tileup">
-                <?php the_sub_field('hero_heading'); ?>
-            </h2></div>
-            <div class="next" id="next-button"><i class='fa-thin fa-angle-right' aria-hidden='true'></i></div>
+            <div class="point-controls--wrapper">
+                <div class="prev" id="prev-button"><i class='fa-thin fa-angle-left' aria-hidden='true'></i></div>
+                <div class="controls-header">
+                    <h2 class="heading-1 font-italic tileup">
+                        <?php the_sub_field('hero_heading'); ?>
+                    </h2>
+                </div>
+                <div class="next" id="next-button"><i class='fa-thin fa-angle-right' aria-hidden='true'></i></div>
+            </div>
         </div>
         <!-- <div class="fade-text">
             <h3 class="heading-2 font-italic tileup">
@@ -75,6 +79,7 @@ if( $link ):
             pitch: 65,
             bearing: 60,
             zoom: 12, // starting zoom
+            interactive: false,
         });
 
         map.on('load', function() {
@@ -131,15 +136,15 @@ if( $link ):
             });
         }
 
-        map.on('move', function() {
-            var pitchElement = document.getElementById('map-pitch');
-            var zoomElement = document.getElementById('map-zoom');
-            var bearingElement = document.getElementById('map-bearing');
+        // map.on('move', function() {
+        //     var pitchElement = document.getElementById('map-pitch');
+        //     var zoomElement = document.getElementById('map-zoom');
+        //     var bearingElement = document.getElementById('map-bearing');
 
-            pitchElement.innerText = 'Pitch: ' + map.getPitch().toFixed(2);
-            zoomElement.innerText = 'Zoom: ' + map.getZoom().toFixed(2);
-            bearingElement.innerText = 'Bearing: ' + map.getBearing().toFixed(2);
-        });
+        //     pitchElement.innerText = 'Pitch: ' + map.getPitch().toFixed(2);
+        //     zoomElement.innerText = 'Zoom: ' + map.getZoom().toFixed(2);
+        //     bearingElement.innerText = 'Bearing: ' + map.getBearing().toFixed(2);
+        // });
 
         var currentIndex = 0; // Keep track of the current index
 
