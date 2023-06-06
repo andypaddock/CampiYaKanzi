@@ -74,6 +74,20 @@ section {
   &.extended {
     grid-column: full-start / full-end;
   }
+  .spacer {
+    &.small {
+      padding: 1rem;
+    }
+    &.medium {
+      padding: 2.5rem;
+    }
+    &.large {
+      padding: 5rem;
+    }
+    &.massive {
+      padding: 10rem;
+    }
+  }
 }
 
 .mb-sm {

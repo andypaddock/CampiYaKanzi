@@ -275,6 +275,11 @@ a {
     li {
       text-transform: uppercase;
       font-size: 1.6rem;
+      &.current-menu-item {
+        a {
+          color: $color-primary;
+        }
+      }
     }
   }
 }

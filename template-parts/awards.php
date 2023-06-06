@@ -1,6 +1,8 @@
 <section class="container section-awards <?php the_sub_field('bg_main'); ?>"
     <?php if (get_sub_field('section_id')) : ?>id="<?php the_sub_field('section_id'); ?>" <?php endif; ?>>
     <div class="row <?php the_sub_field('column_size'); ?>">
+    <h2 class="heading-2 align-cent">
+                            Awards</h2>
 
 
         <?php if( have_rows('awards','options') ): ?>
